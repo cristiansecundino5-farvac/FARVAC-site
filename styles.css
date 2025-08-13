@@ -1,0 +1,22 @@
+
+:root{--primario:#E65100;--bg:#FFF8F1;--card:#fff;--neutro:#333}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;background:var(--bg);color:var(--neutro)}
+.container{width:min(1100px,92%);margin:auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.topbar nav a{margin-right:.8rem;text-decoration:none;color:var(--neutro);font-weight:600}
+.hero{position:relative}
+.hero img{width:100%;height:60vh;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.45))}
+.section{padding:2rem 0}
+.section-cover{background:url('/img/experiencia-4y5.jpg') center/cover no-repeat;color:#fff;padding:4rem 0}
+.section-cover .overlay{background:rgba(0,0,0,.45);padding:1.5rem;border-radius:12px}
+.checklist{list-style:none;padding:0}
+.checklist li{background:var(--card);margin:.5rem 0;padding:.7rem 1rem;border-radius:10px;border-left:6px solid var(--primario)}
+.albums{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.album{position:relative;border-radius:12px;overflow:hidden;display:block}
+.album img{width:100%;height:200px;object-fit:cover}
+.album span{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.6));color:#fff;padding:.6rem 1rem;font-weight:700}
+.post a{display:block;background:#fff;padding:1rem;border-radius:10px;text-decoration:none;color:inherit}
+.btn-primary{background:var(--primario);border:none;color:#fff;padding:.7rem 1rem;border-radius:999px;font-weight:700}
+.footer{background:#111;color:#cfcfcf;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;align-items:center;gap:10px}
